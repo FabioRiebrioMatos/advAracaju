@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ADVARACAJU</title>
+    <link rel="shortcut icon" href="favicon.ico" type="Images/logo.svg">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container"></div>
+            <h1>Fazer Login</h1>
+            <form id="loginForm">
+                <label for="username" style="display: block;">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password" style="display: block;">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <p></p>
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <div id="result"></div>
+            <script>
+                function login() {
+                    const username = document.getElementById('username').value;
+                    const password = document.getElementById('password').value;
+
+                     // Simulação de verificação (substituir por sua lógica real)
+                    if (username === 'admin' && password === 'password123') 
+        {
+                    // Login bem-sucedido, redirecionar para outra página
+                      window.location.href = 'http://lattes.cnpq.br/2335272629572252' ; // Substitua por sua página
+        }
+                     else {
+                     // Login falhou
+                    document.getElementById('result').innerHTML = 'Login inválido.';
+        }
+    }  
+            </script>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>
+            <p>2024 ADV ARACAJU © ARACAJU - SE. Todos os direitos reservados.</p>
+        </h4>
+        <h5>
+            <p>Para Melhores informções entre em contato pelos canais de comunicações.</p>
+        </h5>
+    </footer>
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
